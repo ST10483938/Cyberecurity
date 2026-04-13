@@ -18,10 +18,10 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore CybersecurityChatbot/CybersecurityChatbot.csproj
 
       - name: Build
-        run: dotnet build --no-restore
+        run: dotnet build CybersecurityChatbot/CybersecurityChatbot.csproj --no-restore
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
